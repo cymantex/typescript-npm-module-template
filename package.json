@@ -27,7 +27,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "node updateExports.js",
     "build": "node updateExports.js && tsc",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "test:coverage": "cross-env CI=true react-scripts test --env=jsdom --coverage"
