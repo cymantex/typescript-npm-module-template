@@ -18,8 +18,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "isolatedModules": true,
-    "noEmit": true
+    "isolatedModules": true
   },
   "include": [
     "src/module"
