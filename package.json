@@ -5,8 +5,8 @@
   "author": "Simon Eriksson <smnrkssn@hotmail.se>",
   "license": "MIT",
   "description": "Typescript npm module template",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": ["dist/*"],
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node updateExports.js && tsc",
+    "build": "./scripts/build.sh",
+    "release": "./scripts/release.sh",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "test:coverage": "cross-env CI=true react-scripts test --env=jsdom --coverage"
   },
