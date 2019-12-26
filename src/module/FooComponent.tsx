@@ -3,7 +3,7 @@ import {useFoo} from "./useFoo";
 import "./foo.scss";
 
 export interface Props {
-    defaultValue: string
+    defaultValue?: string
 }
 
 export const FooComponent: React.FC<Props> = ({defaultValue = "foo"}) => {
