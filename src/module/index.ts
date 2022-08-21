@@ -1,5 +1,3 @@
-import {useFoo as useFoo0} from "./useFoo";
-import {FooComponent as FooComponent1} from "./FooComponent";
+import {sum} from "./sum";
 
-export const useFoo = useFoo0;
-export const FooComponent = FooComponent1;
+export default sum;

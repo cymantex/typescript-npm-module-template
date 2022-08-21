@@ -2,5 +2,5 @@
 
 node ./scripts/updateVersion.js
 ./scripts/build.sh
-cd dist
+cd dist || exit
 npm publish

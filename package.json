@@ -1,45 +1,30 @@
 {
   "name": "typescript-npm-module-template",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": false,
-  "author": "Simon Eriksson <smnrkssn@hotmail.se>",
+  "author": "Simon Eriksson <sim.eriksson@outlook.com>",
   "license": "MIT",
   "description": "Typescript npm module template",
   "main": "index.js",
   "types": "index.d.ts",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dv16sen/typescript-npm-module-template"
+    "url": "git+https://github.com/cymantex/typescript-npm-module-template"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.18.6",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.0.24",
-    "@types/node": "^13.1.0",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "cross-env": "^6.0.3",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.0",
-    "typescript": "^3.7.4"
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "./scripts/build.sh",
     "release": "./scripts/release.sh",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "test:coverage": "cross-env CI=true react-scripts test --env=jsdom --coverage"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "test": "jest"
+  }
 }
