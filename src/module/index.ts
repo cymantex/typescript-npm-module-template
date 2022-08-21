@@ -1,3 +1,3 @@
-import {sum} from "./sum";
-
-export default sum;
+export * from "./sum";
+export {default as customDefaultName} from "./sum";
+export {default} from "./sum";

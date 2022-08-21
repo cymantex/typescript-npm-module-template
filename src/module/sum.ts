@@ -6,3 +6,5 @@ type SumArgs = {
 export function sum({a, b}: SumArgs){
     return a + b;
 }
+
+export default {sum}
